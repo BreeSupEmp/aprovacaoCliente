@@ -166,12 +166,12 @@
             document.querySelector('div').classList.toggle('hide')
             localStorage.setItem('cookies', 'accept')
         }
+        
+        window.sessionStorage.getItem('view') ? '' :  insertView() 
 
         if(!localStorage.cookies){
             document.querySelector('div').classList.toggle('hide')
         }
-
-        window.sessionStorage.getItem('view') ? '' :  insertView() 
         
         localização()
         console.log(document.cookie)
