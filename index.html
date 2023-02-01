@@ -1,180 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aprovação</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        main{
-            width: 100%;
-        }
-
-        section{
-            width: 90%;
-            height: 90vh;
-            margin: auto;
-            background-color: lightgray;
-            margin-bottom: 2%;
-            text-align: center;
-        }
-
-        section form{
-            width: 50%;
-            margin: auto;
-            padding: 20vh 0px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        section form input{
-            width: 100%;
-            padding: 5px 5px;
-        }
-
-        div{
-            width: 100%;
-            height: auto;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            background-color: white;
-            text-align: center;
-            padding: 10px 10px;
-            box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.166);
-        }
-
-        div.hide{
-            display: none !important;
-        }
-
-    </style>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>TransCupim</title>
 </head>
 <body>
-    <section>
-        <form onsubmit="insertNewsletter(event)">
-            <input type="text" name="name" placeholder="Nome Completo" minlength="3" required>
-            <input type="email" name="email" placeholder="@email.com.br" required>
-            <input type="tel" name="tel" placeholder="21900000000" minlength="11" maxlength="11" title="Seu numero de celular sem espaços e pontos, apenas números" required>
-            <input type="submit" value="Receber Dados">
-        </form>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="https://download.blender.org/branding/blender_logo_socket.png" alt=""></a>
+            </div>
+            <div>
+
+            </div>
+        </nav>
+        <div class="head">
+            <div class="text-content">
+                <p class="text-destaque">
+                    Solução em
+                </p>
+                <p class="title-destaque">
+                    Terraplanagem
+                </p>
+                <p class="text-destaque">
+                    Executamos os serviços com equipamentos de alta qualidade,
+                    proporcionando confiança e tranquilidade aos seus clientes.
+                </p>
+                <div>
+                    <button>ORÇAMENTO</button>
+                </div>
+            </div>
+            <div class="img-content">
+                <div>
+                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <header>
+            <div>
+                <p>&emsp;</p>
+                <p class="destaque">+23</p>
+                <p>Anos de Mercado</p>
+            </div>
+            <div>
+                <p>Especialistas em</p>
+                <p class="destaque">+6</p>
+                <p>serviços</p>
+            </div>
+            <div>
+                <p>&emsp;</p>
+                <p class="destaque">+14</p>
+                <p>Variedade de equipamentos</p>
+            </div>
+            <div>
+                <p>Serviço</p>
+                <p class="destaque">5</p>
+                <p>Estrelas</p>
+            </div>
+        </header>
+
+        <div class="details-content">
+            <div>
+                <details>
+                    <summary><span>Engenharia</span> <img src="" alt=""></summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cupiditate dignissimos dolorem sint libero vero iure vel quisquam? Ducimus natus quae possimus et tempora aliquam, vitae cupiditate quisquam maxime dolorum.
+                    </p>
+                </details>
+                <details>
+                    <summary><span>Terraplanagem</span> <img src="" alt=""></summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cupiditate dignissimos dolorem sint libero vero iure vel quisquam? Ducimus natus quae possimus et tempora aliquam, vitae cupiditate quisquam maxime dolorum.
+                    </p>
+                </details>
+                <details>
+                    <summary><span>Demolição</span> <img src="" alt=""></summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cupiditate dignissimos dolorem sint libero vero iure vel quisquam? Ducimus natus quae possimus et tempora aliquam, vitae cupiditate quisquam maxime dolorum.
+                    </p>
+                </details>
+            </div>
+            <div>
+                <details>
+                    <summary><span>Transporte de Materiais</span> <img src="" alt=""></summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cupiditate dignissimos dolorem sint libero vero iure vel quisquam? Ducimus natus quae possimus et tempora aliquam, vitae cupiditate quisquam maxime dolorum.
+                    </p>
+                </details>
+                <details>
+                    <summary><span>Locação de Maquinas</span> <img src="" alt=""></summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cupiditate dignissimos dolorem sint libero vero iure vel quisquam? Ducimus natus quae possimus et tempora aliquam, vitae cupiditate quisquam maxime dolorum.
+                    </p>
+                </details>
+                <details>
+                    <summary><span>Limpeza de Terrenos</span> <img src="" alt=""></summary>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet cupiditate dignissimos dolorem sint libero vero iure vel quisquam? Ducimus natus quae possimus et tempora aliquam, vitae cupiditate quisquam maxime dolorum.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </main>
+    <section class="history">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="history-content">
+            <h3>História</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque delectus expedita doloremque ex aut, iste, quae quaerat maiores numquam, ea dicta laudantium illo quos ut nihil alias hic velit cupiditate!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ratione natus, iusto, facere ut nobis maiores sunt ipsum aliquid odit omnis nemo repudiandae illum reprehenderit cupiditate accusantium. Odio, laudantium ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod at laudantium dolor sequi commodi eum, eaque ab numquam repellendus veniam fugiat soluta ad esse officiis, quidem repudiandae quisquam, distinctio est.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ipsum beatae possimus nostrum aliquam recusandae, quas animi accusantium explicabo omnis assumenda rerum exercitationem magni repellendus ad non, cupiditate facere deleniti!</p>
+        </div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-
-    <div class="hide">
-        <p>Este site utiliza cookies para garantir que você obtenha a melhor experiência <a href="" >Políticas de Privacidade</a></p>
-        <button onclick="acceptedCookies()">Aceitar</button>
-    </div>
-    <script>
-        const company = "kJxjAuoqoUdiyqSYJvsq"
-        const site = "DenteClean"
-        let latitude , longitude 
-
-        const insertView = () => {
-            // Add a new document with a generated id.
-            const date = new Date()
-            const now = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`
-            const body = {
-                day: date.getDate(),
-                hour: `${date.getHours()}:${date.getMinutes()}`,
-                month: date.getMonth(),
-                year: date.getFullYear(),
-                date: now,
-                dayOfTheWeek: date.getDate(),
-                company: company,
-                site: site
-            }
-             fetch('https://breese.onrender.com/api/views', {
-            //fetch('http://localhost:3030/api/views', {
-                method: 'POST',
-                body: JSON.stringify(body),
-                headers: {
-                    "Authorization": "Bearer ^lw%V2voS5HjeLfEghE2YWw4U$cv0pVj2Pd8LzFQLilkpNt^sQ",
-                    "Content-Type": "application/json"
-                }
-            })
-            .then((response) => response.json())
-            .then((data) => {
-                window.sessionStorage.setItem('view', true)
-            })
-            .catch((error) => {
-                console.error("Error adding view: ", error);
-            });
-
-        }
-
-        const insertNewsletter = (e) => {
-            e.preventDefault()
-            const name = document.querySelector('input[name="name"]').value
-            const email = document.querySelector('input[name="email"]').value
-            const tel = document.querySelector('input[name="tel"]').value
-
-            const body = {
-                company: company,
-                site: site,
-                user:  JSON.stringify({
-                    name: name,
-                    email: email,
-                    tel: tel,
-                    location: JSON.stringify({
-                        latitude: latitude,
-                        longitude: longitude,
-                    })
-                })
-            }
-
-            fetch('https://breese.onrender.com/api/leads', {
-            //fetch('http://localhost:3030/api/leads', {
-                method: 'POST',
-                body: JSON.stringify(body),
-                headers: {
-                    "Authorization": "Bearer ^lw%V2voS5HjeLfEghE2YWw4U$cv0pVj2Pd8LzFQLilkpNt^sQ",
-                    "Content-Type": "application/json"
-                }
-            })
-            .then((response) => response.json())
-            .then((data) => {
-
-                //window.sessionStorage.setItem('view', true)
-            })
-            .catch((error) => {
-                console.error("Error adding view: ", error);
-            });
-
-            e.target.reset()
-        }
-
-        const localização = () => {
-            if(navigator.geolocation){
-                navigator.geolocation.getCurrentPosition((position) => {
-                    latitude = position.coords.latitude
-                    longitude = position.coords.longitude
-                })
-            }
-        }
-        
-        const acceptedCookies = () => {
-            document.querySelector('div').classList.toggle('hide')
-            localStorage.setItem('cookies', 'accept')
-        }
-        
-        window.sessionStorage.getItem('view') ? '' :  insertView() 
-
-        if(!localStorage.cookies){
-            document.querySelector('div').classList.toggle('hide')
-        }
-        
-        localização()
-        
-    </script>
+    <section class="clientes">
+        <div>
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+            <img src="https://www.dtengenharia.com.br/wp-content/uploads/2021/03/dt-branco.png" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="redes">
+            <img src="https://w7.pngwing.com/pngs/521/488/png-transparent-logo-computer-icons-instagram-logo-miscellaneous-text-logo.png" alt="">
+            <img src="https://w7.pngwing.com/pngs/521/488/png-transparent-logo-computer-icons-instagram-logo-miscellaneous-text-logo.png" alt="">
+            <img src="https://w7.pngwing.com/pngs/521/488/png-transparent-logo-computer-icons-instagram-logo-miscellaneous-text-logo.png" alt="">
+            <img src="https://w7.pngwing.com/pngs/521/488/png-transparent-logo-computer-icons-instagram-logo-miscellaneous-text-logo.png" alt="">
+        </div>
+        <div class="local">
+            <p>
+                <span class="title">
+                    TRANSCUPIM ENGENHARIA E TERRAPLANAGEM LTDA.
+                </span>
+                <br>
+                <span>
+                    Rua João Ferreira Pinto, 307 - Ponto Chic, Nova Iguaçu - RJ
+                </span>
+            </p>
+            <img src="https://download.blender.org/branding/blender_logo_socket.png" alt="">
+        </div>
+    </footer>
 </body>
 </html>

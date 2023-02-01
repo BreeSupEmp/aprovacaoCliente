@@ -1,0 +1,312 @@
+@import url('./css.css');
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav{
+    width: 80%;
+    height: 8vh;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .logo{
+    width: 25%;
+    height: auto;
+}
+
+header nav .logo img{
+    width: 70%;
+    height: auto;
+}
+
+header .head{
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+header .head .text-content{
+   width: 40%;
+   padding: 0px 8%;
+}
+
+header .head .text-content .text-destaque{
+    font-size: 1em;
+    margin: 2px 0px;
+    font-family: var(--font-destaque);
+    text-transform: uppercase;
+}
+
+header .head .text-content .title-destaque{
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+header .head .text-content button{
+    margin-top: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 0.8em;
+    color: white;
+    background-color: var(--orange-color);
+    border: none;
+    border-radius: var(--border-radius);
+}
+
+header .head .img-content{
+   width: 50%;
+   display: flex;
+   flex: 2;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+header .head .img-content div{
+   width: 45%;
+   height: 45%;
+   border-radius: var(--border-radius);
+   overflow: hidden;
+   cursor: pointer;
+}
+
+header .head .img-content div:hover img{
+   transform: scale(1.3);
+}
+
+header .head .img-content div img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transform: scale(1);
+   transition: all ease-in 0.5s;
+}
+
+/* MAIN  */
+
+main{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding: 2% 10%;
+    background-color: var(--gray-color);
+}
+
+main header{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+
+main header div{
+    width: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+main header div p{
+    width: 100%;
+    height: auto;
+    font-size: 0.7em;
+    color: black;
+    text-align: center;
+}
+
+main header div .destaque{
+   font-size: 3em;
+   font-weight: bold;
+   color: black;
+}
+
+main .details-content{
+    width: 80%;
+    margin: 10vh auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 20px;
+}
+
+main .details-content div{
+    width: 50%;
+}
+
+main .details-content div details{
+    width: 100%;
+    margin: 2vh auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+main .details-content div details summary{
+    width: 100%;
+    display: flex;
+    padding: 0px 5px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+main .details-content div details summary span{
+    font-size: 1.5em;
+}
+
+main .details-content div details summary img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Historia  */
+.history{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+
+.history .logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+    overflow: hidden;
+    top: -50px;
+    position: relative;
+}
+
+.history .logo img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.history .history-content{
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 2%;
+    color: white;
+    background-color: var(--orange-color);
+    border-radius: var(--border-radius);
+}
+
+.history .history-content h3{
+    font-size: 3em;
+    text-align: center;
+}
+
+.history .history-content p{
+    font-size: 1em;
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* Clientes */
+.clientes {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.clientes div{
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: black;
+}
+
+.clientes div img{
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 100vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: orange;
+    padding-bottom: 80px;
+}
+
+footer .redes{
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .redes img{
+    width: 40px;
+    height: 40x;
+    margin: 10px;
+    background-color: gray;
+}
+
+footer .local{
+    width: 75%;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+footer .local p span{
+    font-size: 1.5em;
+}
+
+footer .local p .title{
+    font-size: 1.8em;
+}
+
+footer .local img{
+   width: 350px;
+   height: auto;
+   object-fit: contain;
+}
