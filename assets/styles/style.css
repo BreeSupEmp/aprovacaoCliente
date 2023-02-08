@@ -1,5 +1,4 @@
-
-header{
+header {
     width: 100%;
     height: 100vh;
     background: white;
@@ -7,7 +6,7 @@ header{
     flex-wrap: wrap;
 }
 
-header nav{
+header nav {
     width: 100%;
     height: 10vh;
     margin: 0px auto;
@@ -17,17 +16,17 @@ header nav{
     padding: 0px 10px;
 }
 
-header nav .logo{
+header nav .logo {
     width: 50%;
     height: auto;
 }
 
-header nav .logo img{
+header nav .logo img {
     width: 100%;
     height: auto;
 }
 
-header .head{
+header .head {
     width: 100%;
     height: 90vh;
     margin: auto;
@@ -38,68 +37,70 @@ header .head{
     gap: 20px;
 }
 
-header .head .text-content{
-   width: 90%;
-   padding: 0px 8%;
+header .head .text-content {
+    width: 90%;
+    padding: 0px 8%;
 }
 
-header .head .text-content .text-destaque{
+header .head .text-content .text-destaque {
     font-size: 1em;
     margin: 2px 0px;
-    font-family: var(--font-destaque);
+    font-family: var(--font-regular);
     text-transform: uppercase;
 }
 
-header .head .text-content .title-destaque{
+header .head .text-content .title-destaque {
     text-transform: uppercase;
+    font-family: var(--font-bold);
     font-size: 1.5em;
 }
 
-header .head .text-content button{
+header .head .text-content button {
     margin-top: 5px;
     padding: 15px 20px;
     cursor: pointer;
     font-size: 0.8em;
     color: white;
     background-color: var(--orange-color);
+    font-family: var(--font-light);
     border: none;
     border-radius: var(--border-radius);
 }
 
-header .head .img-content{
-   width: 100%;
-   display: flex;
-   flex: 2;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   gap: 10px;
+header .head .img-content {
+    width: 100%;
+    display: flex;
+    flex: 2;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
 }
 
-header .head .img-content div{
-   min-width: 150px;
-   min-height: 150px;
-   max-width: 45%;
-   max-height: 45%;
-   border-radius: var(--border-radius);
-   overflow: hidden;
-   cursor: pointer;
+header .head .img-content div {
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 45%;
+    max-height: 45%;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    cursor: pointer;
 }
 
-header .head .img-content div:hover img{
-   transform: scale(1.3);
+header .head .img-content div:hover img {
+    transform: scale(1.3);
 }
 
-header .head .img-content div img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   transform: scale(1);
-   transition: all ease-in 0.5s;
+header .head .img-content div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all ease-in 0.5s;
 }
 
 /* MAIN  */
 
-main{
+main {
     width: 100%;
     min-height: 100vh;
     margin: auto;
@@ -107,7 +108,7 @@ main{
     background-color: var(--gray-color);
 }
 
-main header{
+main header {
     width: 100%;
     height: auto;
     margin: auto;
@@ -121,28 +122,29 @@ main header{
 }
 
 
-main header div{
+main header div {
     width: 25%;
     display: flex;
     flex-wrap: wrap;
     align-items: start;
 }
 
-main header div p{
+main header div p {
     width: 100%;
     height: auto;
     font-size: 0.4em;
     color: black;
     text-align: center;
+    font-family: var(--font-regular);
 }
 
-main header div .destaque{
-   font-size: 2em;
-   font-weight: bold;
-   color: black;
+main header div .destaque {
+    font-size: 2em;
+    font-family: var(--font-black);
+    color: black;
 }
 
-main .details-content{
+main .details-content {
     width: 100%;
     margin: 5vh auto;
     display: flex;
@@ -152,11 +154,11 @@ main .details-content{
     gap: 10px;
 }
 
-main .details-content div{
+main .details-content div {
     width: 80%;
 }
 
-main .details-content div details{
+main .details-content div details {
     width: 100%;
     margin: 1vh auto;
     padding: 10px;
@@ -165,7 +167,7 @@ main .details-content div details{
     cursor: pointer;
 }
 
-main .details-content div details summary{
+main .details-content div details summary {
     width: 100%;
     display: flex;
     padding: 0px 5px;
@@ -177,25 +179,25 @@ main .details-content div details summary{
     list-style-type: none !important;
 }
 
-main .details-content div details summary span{
+main .details-content div details summary span {
     font-size: 1.5em;
 }
 
-main .details-content div details summary img{
+main .details-content div details summary img {
     width: 20px;
     height: 20px;
 }
 
 
 /* Historia  */
-.history{
+.history {
     width: 100%;
     height: 100vh;
     background-color: white;
     position: relative;
 }
 
-.history .logo{
+.history .logo {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -206,17 +208,17 @@ main .details-content div details summary img{
     position: relative;
 }
 
-.history .logo img{
+.history .logo img {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
 
-.history .history-content{
+.history .history-content {
     position: relative;
     width: 90%;
     height: auto;
-    margin: auto;
+    margin: 0px auto;
     margin-top: 0vh;
     padding: 2%;
     color: white;
@@ -224,15 +226,15 @@ main .details-content div details summary img{
     border-radius: var(--border-radius);
 }
 
-.history .history-content h3{
+.history .history-content h3 {
     font-size: 2em;
     text-align: center;
 }
 
-.history .history-content p{
-    font-size: 0.9em;
+.history .history-content p {
+    font-size: 1em;
     text-align: center;
-    margin: 20px auto;
+    margin: 5% auto;
 }
 
 /* Clientes */
@@ -242,7 +244,7 @@ main .details-content div details summary img{
     background-color: black;
 }
 
-.clientes div{
+.clientes div {
     width: 70%;
     height: 100vh;
     margin: auto;
@@ -254,14 +256,14 @@ main .details-content div details summary img{
     background-color: black;
 }
 
-.clientes div img{
+.clientes div img {
     width: 20%;
     height: auto;
     object-fit: contain;
 }
 
 /* Footer */
-footer{
+footer {
     width: 100%;
     height: 100vh;
     background-image: url();
@@ -275,7 +277,7 @@ footer{
     padding-bottom: 80px;
 }
 
-footer .redes{
+footer .redes {
     width: 20%;
     min-height: 100px;
     display: flex;
@@ -284,13 +286,12 @@ footer .redes{
     align-items: center;
 }
 
-footer .redes img{
+footer .redes img {
     width: 45%;
     height: auto;
-    background-color: gray;
 }
 
-footer .local{
+footer .local {
     width: 75%;
     min-height: 100px;
     display: flex;
@@ -300,32 +301,33 @@ footer .local{
     color: white;
     text-align: right;
     padding: 10px;
+    font-family: var(--font-light);
 }
 
-footer .local p .title{
+footer .local p .title {
     font-size: 0.6em;
 }
 
-footer .local p span{
+footer .local p span {
     font-size: 0.5em;
 }
 
-footer .local img{
-   width: 80%;
-   height: auto;
-   object-fit: contain;
+footer .local img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
 }
 
-@media (min-width: 720px){
-    header{
+@media (min-width: 720px) {
+    header {
         width: 100%;
         height: 100vh;
         background: white;
         display: flex;
         flex-wrap: wrap;
     }
-    
-    header nav{
+
+    header nav {
         width: 80%;
         height: 8vh;
         margin: 0px auto;
@@ -333,18 +335,18 @@ footer .local img{
         justify-content: space-between;
         align-items: center;
     }
-    
-    header nav .logo{
+
+    header nav .logo {
         width: 25%;
         height: auto;
     }
-    
-    header nav .logo img{
+
+    header nav .logo img {
         width: 70%;
         height: auto;
     }
-    
-    header .head{
+
+    header .head {
         width: 80%;
         height: 90vh;
         margin: auto;
@@ -353,25 +355,26 @@ footer .local img{
         align-items: center;
         gap: 20px;
     }
-    
-    header .head .text-content{
-       width: 40%;
-       padding: 0px 8%;
+
+    header .head .text-content {
+        width: 40%;
+        padding: 0px 8%;
     }
-    
-    header .head .text-content .text-destaque{
+
+    header .head .text-content .text-destaque {
         font-size: 1em;
         margin: 2px 0px;
-        font-family: var(--font-destaque);
+        font-family: var(--font-regular);
         text-transform: uppercase;
     }
-    
-    header .head .text-content .title-destaque{
+
+    header .head .text-content .title-destaque {
         text-transform: uppercase;
+        font-family: var(--font-bold);
         font-size: 1.5em;
     }
-    
-    header .head .text-content button{
+
+    header .head .text-content button {
         margin-top: 5px;
         padding: 15px 20px;
         cursor: pointer;
@@ -381,46 +384,46 @@ footer .local img{
         border: none;
         border-radius: var(--border-radius);
     }
-    
-    header .head .img-content{
-       width: 50%;
-       display: flex;
-       flex: 2;
-       flex-wrap: wrap;
-       gap: 10px;
+
+    header .head .img-content {
+        width: 50%;
+        display: flex;
+        flex: 2;
+        flex-wrap: wrap;
+        gap: 10px;
     }
-    
-    header .head .img-content div{
-       width: 45%;
-       height: 45%;
-       border-radius: var(--border-radius);
-       overflow: hidden;
-       cursor: pointer;
+
+    header .head .img-content div {
+        width: 45%;
+        height: 45%;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        cursor: pointer;
     }
-    
-    header .head .img-content div:hover img{
-       transform: scale(1.3);
+
+    header .head .img-content div:hover img {
+        transform: scale(1.3);
     }
-    
-    header .head .img-content div img{
-       width: 100%;
-       height: 100%;
-       object-fit: cover;
-       transform: scale(1);
-       transition: all ease-in 0.5s;
+
+    header .head .img-content div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1);
+        transition: all ease-in 0.5s;
     }
-    
+
     /* MAIN  */
-    
-    main{
+
+    main {
         width: 100%;
         height: 100vh;
         margin: auto;
         padding: 2% 10%;
         background-color: var(--gray-color);
     }
-    
-    main header{
+
+    main header {
         width: 80%;
         height: auto;
         margin: auto;
@@ -432,30 +435,31 @@ footer .local img{
         padding-bottom: 50px;
         border-bottom: 2px solid black;
     }
-    
-    
-    main header div{
+
+
+    main header div {
         width: 18%;
         display: flex;
         flex-wrap: wrap;
         align-items: start;
     }
-    
-    main header div p{
+
+    main header div p {
         width: 100%;
         height: auto;
         font-size: 0.7em;
         color: black;
         text-align: center;
+    font-family: var(--font-regular);
     }
-    
-    main header div .destaque{
-       font-size: 3em;
-       font-weight: bold;
-       color: black;
+
+    main header div .destaque {
+        font-size: 3em;
+        font-family: var(--font-black);
+        color: black;
     }
-    
-    main .details-content{
+
+    main .details-content {
         width: 80%;
         margin: 10vh auto;
         display: flex;
@@ -464,12 +468,12 @@ footer .local img{
         align-items: stretch;
         gap: 20px;
     }
-    
-    main .details-content div{
+
+    main .details-content div {
         width: 50%;
     }
-    
-    main .details-content div details{
+
+    main .details-content div details {
         width: 100%;
         margin: 2vh auto;
         padding: 10px;
@@ -477,8 +481,8 @@ footer .local img{
         border-radius: var(--border-radius);
         cursor: pointer;
     }
-    
-    main .details-content div details summary{
+
+    main .details-content div details summary {
         width: 100%;
         display: flex;
         padding: 0px 5px;
@@ -489,26 +493,26 @@ footer .local img{
         list-style: none !important;
         list-style-type: none !important;
     }
-    
-    main .details-content div details summary span{
+
+    main .details-content div details summary span {
         font-size: 1.5em;
     }
-    
-    main .details-content div details summary img{
-        width: 20px;
-        height: 20px;
+
+    main .details-content div details summary img {
+        width: 30px;
+        height: 30px;
     }
-    
-    
+
+
     /* Historia  */
-    .history{
+    .history {
         width: 100%;
         height: 100vh;
         background-color: white;
         position: relative;
     }
-    
-    .history .logo{
+
+    .history .logo {
         width: 100px;
         height: 100px;
         margin: auto;
@@ -518,14 +522,14 @@ footer .local img{
         top: -50px;
         position: relative;
     }
-    
-    .history .logo img{
+
+    .history .logo img {
         width: 100%;
         height: auto;
         object-fit: contain;
     }
-    
-    .history .history-content{
+
+    .history .history-content {
         position: relative;
         width: 60%;
         height: auto;
@@ -536,26 +540,26 @@ footer .local img{
         background-color: var(--orange-color);
         border-radius: var(--border-radius);
     }
-    
-    .history .history-content h3{
+
+    .history .history-content h3 {
         font-size: 3em;
         text-align: center;
     }
-    
-    .history .history-content p{
+
+    .history .history-content p {
         font-size: 1em;
         text-align: center;
         margin: 50px auto;
     }
-    
+
     /* Clientes */
     .clientes {
         width: 100%;
         height: 100vh;
         background-color: black;
     }
-    
-    .clientes div{
+
+    .clientes div {
         width: 70%;
         height: 100vh;
         margin: auto;
@@ -566,15 +570,15 @@ footer .local img{
         gap: 20px;
         background-color: black;
     }
-    
-    .clientes div img{
+
+    .clientes div img {
         width: 20%;
         height: auto;
         object-fit: contain;
     }
-    
+
     /* Footer */
-    footer{
+    footer {
         width: 100%;
         height: 100vh;
         background-image: url();
@@ -587,8 +591,8 @@ footer .local img{
         background-color: orange;
         padding-bottom: 80px;
     }
-    
-    footer .redes{
+
+    footer .redes {
         width: 20%;
         height: 100px;
         display: flex;
@@ -596,15 +600,14 @@ footer .local img{
         justify-content: space-around;
         align-items: center;
     }
-    
-    footer .redes img{
+
+    footer .redes img {
         width: 40px;
         height: 40x;
         margin: 10px;
-        background-color: gray;
     }
-    
-    footer .local{
+
+    footer .local {
         width: 60%;
         height: 100px;
         display: flex;
@@ -612,20 +615,21 @@ footer .local img{
         align-items: center;
         justify-content: space-around;
         color: white;
+        font-family: var(--font-light);
         text-align: right;
     }
-    
-    footer .local p span{
+
+    footer .local p span {
         font-size: 0.9em;
     }
-    
-    footer .local p .title{
+
+    footer .local p .title {
         font-size: 1em;
     }
-    
-    footer .local img{
-       width: 350px;
-       height: auto;
-       object-fit: contain;
+
+    footer .local img {
+        width: 350px;
+        height: auto;
+        object-fit: contain;
     }
 }
