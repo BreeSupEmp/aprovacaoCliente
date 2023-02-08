@@ -17,13 +17,57 @@ header nav {
 }
 
 header nav .logo {
-    width: 50%;
+    width: 48%;
     height: auto;
 }
 
 header nav .logo img {
     width: 100%;
     height: auto;
+}
+
+header nav .menu{
+    width: auto;
+    cursor: pointer;
+    list-style: none;
+}
+
+header nav .menu span{
+    padding: 10px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header nav .menu:hover .itens{
+    display: block;
+}
+
+header nav .menu .itens{
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+header nav .menu .itens .navbar-nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;    
+    text-align: right;
+    margin: 5px 0px;
+}
+
+header nav .menu .itens a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+header nav .menu .itens{
+    width: 100px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    margin-left: -60px;
 }
 
 header .head {
@@ -47,6 +91,9 @@ header .head .text-content .text-destaque {
     margin: 2px 0px;
     font-family: var(--font-regular);
     text-transform: uppercase;
+    letter-spacing: 1px;
+    word-wrap: normal;
+    line-height: normal;
 }
 
 header .head .text-content .title-destaque {
@@ -140,7 +187,7 @@ main header div p {
 
 main header div .destaque {
     font-size: 2em;
-    font-family: var(--font-black);
+    font-family: var(--font-regular);
     color: black;
 }
 
@@ -165,6 +212,16 @@ main .details-content div details {
     background-color: white;
     border-radius: var(--border-radius);
     cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+main .details-content div details:hover {
+    background-color: var(--orange-color);
+    color: white;
+}
+
+main .details-content div details:hover img{
+    filter: invert(1);
 }
 
 main .details-content div details summary {
@@ -186,6 +243,7 @@ main .details-content div details summary span {
 main .details-content div details summary img {
     width: 20px;
     height: 20px;
+    transition: all ease-in-out 0.3s;
 }
 
 
@@ -266,15 +324,14 @@ main .details-content div details summary img {
 footer {
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url('../img/rodape_small.webp');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-end;
-    background-color: orange;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 }
 
 footer .redes {
@@ -305,18 +362,16 @@ footer .local {
 }
 
 footer .local p .title {
-    font-size: 0.6em;
+    font-size: 1em;
+    text-shadow: 0px 0px 1px black;
 }
 
 footer .local p span {
-    font-size: 0.5em;
+    font-size: 0.8em;
+    text-shadow: 0px 0px 1px black;
+
 }
 
-footer .local img {
-    width: 80%;
-    height: auto;
-    object-fit: contain;
-}
 
 @media (min-width: 720px) {
     header {
@@ -339,10 +394,11 @@ footer .local img {
     header nav .logo {
         width: 25%;
         height: auto;
+        margin-left: -30px;
     }
 
     header nav .logo img {
-        width: 70%;
+        width: 60%;
         height: auto;
     }
 
@@ -455,7 +511,7 @@ footer .local img {
 
     main header div .destaque {
         font-size: 3em;
-        font-family: var(--font-black);
+        font-family: var(--font-regular);
         color: black;
     }
 
@@ -581,15 +637,14 @@ footer .local img {
     footer {
         width: 100%;
         height: 100vh;
-        background-image: url();
+        background-image: url('../img/rodape_med.webp');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: left;
         align-items: flex-end;
-        background-color: orange;
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
 
     footer .redes {
@@ -598,7 +653,7 @@ footer .local img {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-around;
-        align-items: center;
+        align-items: center;        
     }
 
     footer .redes img {
@@ -615,21 +670,18 @@ footer .local img {
         align-items: center;
         justify-content: space-around;
         color: white;
-        font-family: var(--font-light);
+        font-family: var(--font-regular);
         text-align: right;
     }
 
     footer .local p span {
-        font-size: 0.9em;
+        font-size: 1em;
+        text-shadow: 0px 0px 1px black;
     }
 
     footer .local p .title {
-        font-size: 1em;
+        font-size: 1.5em;
+        text-shadow: 0px 0px 1px black;
     }
 
-    footer .local img {
-        width: 350px;
-        height: auto;
-        object-fit: contain;
-    }
 }
