@@ -343,9 +343,14 @@ footer .redes {
     align-items: center;
 }
 
-footer .redes img {
+footer .redes a{
     width: 45%;
+}
+
+footer .redes a img {
+    width: 100%;
     height: auto;
+    filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.5));
 }
 
 footer .local {
@@ -656,9 +661,13 @@ footer .local p span {
         align-items: center;        
     }
 
-    footer .redes img {
-        width: 40px;
-        height: 40x;
+    footer .redes a{
+        width: 20%;
+    }
+
+    footer .redes a img {
+        width: 70%;
+        height: auto;
         margin: 10px;
     }
 
