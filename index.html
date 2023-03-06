@@ -1,274 +1,509 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ICON -->
-    <link rel="shortcut icon" href="./assets/img/logo/icon-branco.webp" type="image/x-icon">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/styles/css.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <!-- METAS -->
-    <meta property="og:description"
-        content="A melhor em demolição, terraplanagem, limpeza e locação! Venha com a melhor" />
-    <meta property="og:image" content="https://www.transcupim.com.br/img/Slideshow/slide1.jpg" />
-    <meta property="og:url" content="https://www.transcupim.com.br" />
-    <meta property="og:site_name" content="TransCupim" />
-    <meta property="og:title" content="TransCupim" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:type" content="image/jpeg">
-
-    <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-
-    <title>TransCupim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>+odonto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-    <header id="home">
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="./assets/img/logo/logo-preta.webp" alt="TransCupim"></a>
-            </div>
-            <ul class="menu" id="navbarNavAltMarkup">
-                <li>
-                    <span>☰</span>
-                    <div class="itens">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                            <a class="nav-link" href="#servicos">Serviços</a>
-                            <a class="nav-link" href="#historia">História</a>
-                            <a class="nav-link" href="#clientes">Clientes</a>
-                        </div>
-                        </div>
-                </li>
-            </ul>
-        </nav>
-        <div class="head">
-            <div class="text-content">
-                <p class="text-destaque">
-                    Solução em
-                </p>
-                <p class="title-destaque">
-                    Terraplanagem
-                </p>
-                <p class="text-destaque">
-                    Executamos os serviços com equipamentos de alta qualidade,
-                    proporcionando confiança e tranquilidade aos seus clientes.
-                </p>
-                <div>
-                    <button>ORÇAMENTO</button>
-                </div>
-            </div>
-            <div class="img-content">
-                <div>
-                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
-                </div>
-                <div>
-                    <img src="https://lazzarini.com.br/wp-content/uploads/2017/08/AC-3.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </header>
-    <main id="servicos">
-        <header>
-            <div>
-                <p>&emsp;</p>
-                <p class="destaque">+23</p>
-                <p>Anos de Mercado</p>
-            </div>
-            <div>
-                <p>Especialistas em</p>
-                <p class="destaque">+6</p>
-                <p>serviços</p>
-            </div>
-            <div>
-                <p>&emsp;</p>
-                <p class="destaque">+14</p>
-                <p>Variedade de equipamentos</p>
-            </div>
-            <div>
-                <p>Serviço</p>
-                <p class="destaque">5</p>
-                <p>Estrelas</p>
-            </div>
-        </header>
+  <header>
+    <nav class="navbar navbar-expand-lg" id="navbarNavAltMarkup">
+      <div class="container-fluid right">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.webp" alt="logo" />
+        </a>
 
-        <div class="details-content">
-            <div>
-                <details>
-                    <summary><span>Engenharia</span> <img src="./assets/img/icons/engenheiro.webp" alt="Engenharia">
-                    </summary>
-                    <p>
-                        Entregar soluções é nossa engenharia. Sua obra com planejamento e organização.
-                    </p>
-                </details>
-                <details>
-                    <summary><span>Terraplanagem</span> <img src="./assets/img/icons/terraplanagem.webp"
-                            alt="terraplanagem"></summary>
-                    <p>
-                        É o primeiro passo de uma obra, sendo assim, executa-la com perfeição é algo primordial para
-                        qualquer projeto estrutural de engenharia civil.
-                    </p>
-                </details>
-                <details>
-                    <summary><span>Demolição</span> <img src="./assets/img/icons/demolicao.webp" alt="demolição">
-                    </summary>
-                    <p>
-                        Demolição de todos os portes e níveis. Corpo técnico capacitado e com larga experiência para a
-                        execução e acompanhamento, garantindo excelência do início ao fim.
-                    </p>
-                </details>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#quemsomos">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicos">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tecnologias">Nossas Tecnologias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#equipe">Equipe</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#historia">Histórias de Sucesso</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.maisodontoclinica.com/mais-odonto-kids" target="_blank">Mais odonto
+                kids</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="container-fluid">
+        <img src="./assets/img/home.webp" class="img-fluid width-100" alt="...">
+      </div>
+
+      <div class="container content-relative">
+        <div class="container-fluid">
+          <p class="border-thin">
+            Odontologia em conjunto com a tecnologia para você e sua família.
+          </p>
+        </div>
+        <div class="container-fluid ">
+          <div class="video-home content-relative">
+            <div class="vector"><img src="assets/img/vector_cinza.webp" /></div>
+            <video class="container-fluid video" controls muted>
+              <source src="https://video.wixstatic.com/video/518450_42904589912e4b7aafd7cfb0554d7d06/720p/mp4/file.mp4"
+                type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="vector-dente"><img src="assets/img/dente.webp" /></div>
+          </div>
+          <div class="container-fluid text-center">
+            <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container bg-dra margin-y">
+        <div class="row">
+          <div class="col">
+            <div class="sub-title">
+              <img src="./assets/img/titulo_acessibilidade.webp" alt="...">
             </div>
-            <div>
-                <details>
-                    <summary><span>Transporte de Materiais</span> <img src="./assets/img/icons/transporte.webp"
-                            alt="transporte"></summary>
-                    <p>
-                        Também faz parte do início de um empreendimento. Para esse transporte, prestamos cuidados
-                        especiais para evitar desperdícios e acidentes.
-                    </p>
-                </details>
-                <details>
-                    <summary><span>Locação de Máquinas</span> <img src="./assets/img/icons/locacao.webp" alt="locação">
-                    </summary>
-                    <p>
-                        Equipamentos modernos para locação, maquinários e equipamentos específicos para aplicações em
-                        obras de infraestrutura urbana, contam com manutenção preventiva e corretiva.
-                    </p>
-                </details>
-                <details>
-                    <summary><span>Limpeza de Terrenos</span> <img src="./assets/img/icons/limpeza.webp" alt="limpeza">
-                    </summary>
-                    <p>
-                        A limpeza e a terraplanagem é uma das primeiras etapas da construção de uma casa. Ela é
-                        necessária para preparação do terreno onde a edificação será feita, evitando problemas durante a
-                        execução da obra.
-                    </p>
-                </details>
+            <p>Nossa clínica tem acessibilidade para
+              receber pacientes portadores de
+              necessidades especiais,
+              disponibilizando respeito e conforto. </p>
+          </div>
+          <div class="col">
+            <div class="sub-title">
+              <img src="./assets/img/titulo_humanizada.png.webp" alt="...">
             </div>
+            <p>Atendimento humanizado com
+              foco no respeito e acolhimento
+              de adultos e crianças. </p>
+          </div>
         </div>
-    </main>
-    <section class="history" id="historia">
-        <div class="logo">
-            <img src="./assets/img/logo/icon-laranja.webp" alt="">
+        <div class="row">
+          <div class="col">
+            <div class="sub-title">
+              <img src="./assets/img/titulo_especializada.png.webp" alt="...">
+            </div>
+            <p>Equipe de profissinais
+              extremamente qualificados
+              capaz de atender a todas as
+              suas necessidades.</p>
+          </div>
+          <div class="col">
+            <div class="sub-title">
+              <img src="./assets/img/titulo_praticidade.webp" alt="...">
+            </div>
+            <p>Mais praticidade com todas as
+              especialidades que você precisa
+              em um sólugar.</p>
+          </div>
         </div>
-        <div class="history-content">
-            <h3>História</h3>
-            <p>Tendo seu início em 2000, com serviços de transporte de materiais em Caminhões, a TransCupim, com sede
-                localizada na cidade de Nova Iguaçu - RJ, começou a trabalhar com demais máquinas em 2009. Estando no
-                mercado há mais de 22 anos, tendo se tornado uma referência em terraplanagem, a empresa dará um novo
-                passo em 2023, engrenando em serviços de engenharia.</p>
+        <div class="container-fluid ">
+          <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
         </div>
+      </div>
     </section>
-    <section class="clientes" id="clientes">
+
+    <section id="quemsomos">
+      <div class="container">
+        <div class="row">
+          <div class="col img-quemsomos">
+            <img src="./assets/img/quemsomos.webp" class="img-fluid width-100" alt="...">
+          </div>
+          <div class="col text-padding">
+            <div class="title">
+              <img src="./assets/img/titulo_quemsomos.png.webp" alt="...">
+            </div>
+            <p>A clínica foi inaugurada em dezembro de 2020, com o
+              propósito de afirmar que é possível fazer tratamentos
+              dentários sem dor. Para isso, contamos com uma
+              estrutura aconchegante e climatizada, com máquina
+              de café e refrigerante na recepção, pois queremos que
+              o paciente se sinta à vontade; além de equipamentos
+              modernos, a fim de passar uma maior tranquilidade
+              para nossos pacientes.</p>
+
+            <p>Nossos principais serviços são nas áreas de
+              Ortodontia, Invisalign, Endodontia, Odontopediatria e
+              Harmonização Orofacial, contando com uma equipe
+              completa e especializada também nas áreas de
+              implantodontia, restauração estética, periodontia e
+              cirurgia oral menor.</p>
+
+            <p>Nossa equipe é formada por profissionais
+              comprometidos com a qualidade do nosso trabalho e
+              com obem-estar do paciente.</p>
+          </div>
+        </div>
+        <div class="row text-center margin-y">
+          <div class="col">
+            <img src="" alt="" srcset="">
+            <video class="container-fluid" controls muted>
+              <source src="https://video.wixstatic.com/video/518450_42904589912e4b7aafd7cfb0554d7d06/720p/mp4/file.mp4"
+                type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos">
+      <div class="container">
+
+        <div class="title">
+          <img src="./assets/img/titulo_servicos.png.webp" alt="...">
+        </div>
+      </div>
+      <div class="container-fluid card-image margin-y">
         <div>
-            <img src="./assets/img/clientes/calpergestao.webp" alt="">
-            <img src="./assets/img/clientes/camargocorreia.webp" alt="">
-            <img src="./assets/img/clientes/concremat.webp" alt="">
-            <img src="./assets/img/clientes/copa.webp" alt="">
-            <img src="./assets/img/clientes/cweber.webp" alt="">
-            <img src="./assets/img/clientes/dt.webp" alt="">
-            <img src="./assets/img/clientes/geoambiental.webp" alt="">
-            <img src="./assets/img/clientes/haztec.webp" alt="">
-            <img src="./assets/img/clientes/maislar.webp" alt="">
-            <img src="./assets/img/clientes/rioita.webp" alt="">
-            <img src="./assets/img/clientes/solidum.webp" alt="">
+          <img src="./assets/img/clinico.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Clínico</p>
+        </div>
+        <div>
+          <img src="./assets/img/invisaling.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Invisalign</p>
+        </div>
+        <div>
+          <img src="./assets/img/harmoniza195167195163o-orofacil.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Harmonização Orofacial</p>
+        </div>
+        <div>
+          <img src="./assets/img/implantes.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Implantes</p>
+        </div>
+        <div>
+          <img src="./assets/img/endodontia.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Endodontia</p>
+        </div>
+        <div>
+          <img src="./assets/img/odonto-pediatria.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Odontopediatria</p>
+        </div>
+        <div>
+          <img src="./assets/img/ortodontia.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Ortodontia</p>
+        </div>
+        <div>
+          <img src="./assets/img/protese.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Prótese</p>
+        </div>
+        <div>
+          <img src="./assets/img/lentes-de-contato.webp" class="img-fluid" alt="...">
+          <div class="bg"></div>
+          <p>Lentes de Contato</p>
+        </div>
+      </div>
+      <div class="container-fluid text-center margin-y">
+        <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+      </div>
+    </section>
+
+    <section id="tecnologias">
+      <div class="container padding-top">
+        <div class="row">
+          <div class="col">
+            <div class="title">
+              <img src="./assets/img/titulo_nossas_tecnologias.png.webp" alt="...">
+            </div>
+            <p class="text">Para que você tenha uma
+              experiência agradável durante
+              todas as fases do seu tratamento
+              odontológico.</p>
+
+            <div class="container-fluid text-center margin-y">
+              <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+            </div>
+          </div>
+          <div class="col tecs">
+            <div class="content content-relative">
+              <img src="./assets/img/vector_rosa.webp" alt="">
+              <div class="content-item">
+                <img src="./assets/img/tec1.webp" class="img-fluid width-100" alt="...">
+                <div class="bg"></div>
+                <p class="text-upper">LASERTERAPIA</p>
+              </div>
+              <div class="content-item">
+                <img src="./assets/img/tec2.webp" class="img-fluid width-100" alt="...">
+                <div class="bg"></div>
+                <p class="text-upper">Sedação consciente com óxido nitroso</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe">
+      <div class="container equipe">
+        <div class="title">
+          <img src="./assets/img/titulo_equipe.png" alt="...">
+        </div>
+        <div class="content margin-y">
+          <div class="content-item">
+            <img src="./assets/img/dra-thallita.webp" class="img-fluid" alt="...">
+            <div class="bg"></div>
+            <p class="font-bold text-upper">dra. Thallita Nogueira</p>
+            <p>Odontopediatra/Ortodontista</p>
+            <p>Invisalign/Endodontista</p>
+          </div>
+          <div class="content-item">
+            <img src="./assets/img/dra-jessica.webp" class="img-fluid width-100" alt="...">
+            <div class="bg"></div>
+            <p class="font-bold text-upper">dra. Jéssica</p>
+            <p>&emsp;</p>
+            <p>&emsp;</p>
+          </div>
+          <div class="content-item">
+            <img src="./assets/img/dra-edna.webp" class="img-fluid width-100" alt="...">
+            <div class="bg"></div>
+            <p class="font-bold text-upper">dra. Edna Boldrim</p>
+            <p>Odontopediatra</p>
+            <p>&emsp;</p>
+          </div>
+          <div class="content-item">
+            <img src="./assets/img/dr-otavio.webp" class="img-fluid width-100" alt="...">
+            <div class="bg"></div>
+            <p class="font-bold text-upper">dr. Otavio Oliveira</p>
+            <p>Especialista em Prótese Dentaria</p>
+            <p>&emsp;</p>
+          </div>
+          <div class="content-item">
+            <img src="./assets/img/rec-cristina.webp" class="img-fluid width-100" alt="...">
+            <div class="bg"></div>
+            <p class="font-bold text-upper">Cristina</p>
+            <p>Recepicionista</p>
+            <p>&emsp;</p>
+          </div>
+          <div class="content-item">
+            <img src="./assets/img/ass-ana-paula.webp" class="img-fluid width-100" alt="...">
+            <div class="bg"></div>
+            <p class="font-bold text-upper">Ana Paula</p>
+            <p>Assistente</p>
+            <p>&emsp;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historia">
+      <div class="container historia">
+        <div class="title">
+          <img src="./assets/img/titulo_historias_sucesso.png.webp" alt="...">
+        </div>
+        <div class="content">
+          <div>
+            <div class="content-relative">
+              <video class="container-fluid video" controls muted>
+                <source
+                  src="https://video.wixstatic.com/video/518450_42904589912e4b7aafd7cfb0554d7d06/720p/mp4/file.mp4"
+                  type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="vector-dente"><img src="assets/img/dente.webp" /></div>
+            </div>
+            <div class="container-fluid text-center float-bottom">
+              <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+            </div>
+          </div>
+          <div class="content-relative">
+
+            <div class="container-fluid">
+              <p class="border-thin">
+                “Obrigada por tudo! Valentina ganhou dinheiro da fada do dente e disse que quer um briquedo igual o da
+                tia Thallita.”
+
+              </p>
+            </div>
+            <div class="content-relative">
+              <video class="container-fluid video" controls muted>
+                <source
+                  src="https://video.wixstatic.com/video/518450_42904589912e4b7aafd7cfb0554d7d06/720p/mp4/file.mp4"
+                  type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
     </section>
-    <footer>
-        <div class="redes">
-            <a href="https://www.facebook.com/TranscupimTerraplanagem/" target="_blank" ><img src="./assets/img/icons/facebook.webp" alt="facebook"></a>
-            <a href="https://www.instagram.com/transcupimterraplanagem/" target="_blank" ><img src="./assets/img/icons/instagram.webp" alt="instagram"></a>
-            <a href="https://api.whatsapp.com/send/?phone=552131017312&text&type=phone_number&app_absent=0" target="_blank" ><img src="./assets/img/icons/whatsapp.webp" alt="whatsapp"></a>
-            <a href="mailto:transcupim@gmail.com?subject=orçamento" target="_blank" ><img src="./assets/img/icons/gmail.webp" alt="gmail"></a>
+
+    <section id="contato">
+      <div class="container contato">
+        <div class="row">
+          <div class="col">
+            <div>
+              <div class="title">
+                <img src="./assets/img/titulo_contato.png.webp" alt="...">
+              </div>
+              <div class="icons-contato">
+                <img src="./assets/img/icon_telefone.png.webp" class="img-fluid" alt="...">
+                <img src="./assets/img/icon_whatsapp.png.webp" class="img-fluid" alt="...">
+                <img src="./assets/img/icon_instagram.png.webp" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="container-fluid text-center">
+              <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+            </div>
+          </div>
+          <div class="col endereco">
+            <div>
+              <h3 class="text-upper font-bold">Nosso endereço</h3>
+              <p>
+                Edifício LeMonde, Sala 805 e 807
+                Av. Dr. Mário Guimarães, 428,
+                Nova Iguaçu - RJ
+                <a href="https://www.google.com/maps/dir//Le+Monde+Office+Life+-+Avenida+Doutor+M%C3%A1rio+Guimar%C3%A3es+-+Centro,+Nova+Igua%C3%A7u+-+RJ/@-22.7521353,-43.4489646,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x996708b94a1769:0x6334305b50b8758a!2m2!1d-43.4556369!2d-22.7592884"
+                  target="_blank">mapa</a>
+              </p>
+              <p>&emsp;</p>
+              <h3 class="text-upper font-bold">Nosso horário</h3>
+              <p>Segunda a Sexta</p>
+              <p>09:00 - 18:00</p>
+            </div>
+          </div>
         </div>
-        <div class="local">
-            <p>
-                <span class="title">
-                    TRANSCUPIM ENGENHARIA E TERRAPLANAGEM LTDA.
-                </span>
-                <br>
-                <span>
-                    transcupim@gmail.com
-                </span>
-                <br>
-                <span>
-                    Tel.: (21) 3101-7312 / (21) 7725-7241 / ID: 24*112060
-                </span>
-                <br>
-                <span>
-                    Rua João Ferreira Pinto, número 307. Ponto Chic, Nova Iguaçu - RJ
-                </span>
-            </p>
-        </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script>
-        /* Scroll Smoth */
-        const scrollToSection = (event) => {
-            event.preventDefault()
-            console.log(event.target)
-            const distance = getDistanceFromTheTop(event.target) - 0
-            /*              Top, Distancia Duracao */ 
-            smoothScrollTo(0, distance, 1000)
-            closeNavMobile()
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
 
+  <!-- Mudar cor da nav com scroll  -->
+  <script>
+
+    const activeScroll = () => {
+      const nav = document.querySelector('header')
+      const distance = window.screen.height * (1 / 4)
+      nav.classList.toggle('activeNav', scrollY > distance)
+    }
+
+    window.addEventListener('scroll', activeScroll)
+  </script>
+
+  <!-- scroll  -->
+
+  <script>
+    /* Scroll Smoth */
+    const scrollToSection = (event) => {
+      event.preventDefault()
+      removeActive()
+      event.target.classList.add('active')
+      const distance = getDistanceFromTheTop(event.target) - 50
+      /*              Top, Distancia Duracao */
+      smoothScrollTo(0, distance, 1000)
+      closeNavMobile()
+
+    }
+
+    const getDistanceFromTheTop = (element) => {
+      const id = element.getAttribute('href')
+      return document.querySelector(id).offsetTop
+    }
+
+    function smoothScrollTo(endX, endY, duration) {
+      const startX = window.scrollX || window.pageXOffset;
+      const startY = window.scrollY || window.pageYOffset;
+      const distanceX = endX - startX;
+      const distanceY = endY - startY;
+      const startTime = new Date().getTime();
+
+      duration = typeof duration !== "undefined" ? duration : 400;
+
+      const easeInOutQuart = (time, from, distance, duration) => {
+        if ((time /= duration / 2) < 1)
+          return (distance / 2) * time * time * time * time + from;
+        return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
+      };
+
+      const timer = setInterval(() => {
+        const time = new Date().getTime() - startTime;
+        const newX = easeInOutQuart(time, startX, distanceX, duration);
+        const newY = easeInOutQuart(time, startY, distanceY, duration);
+        if (time >= duration) {
+          clearInterval(timer);
         }
+        window.scroll(newX, newY);
 
-        const getDistanceFromTheTop = (element) =>{
-            const id = element.getAttribute('href')
-            console.log(id)
-            return document.querySelector(id).offsetTop
-        }
+      }, 1000 / 60);
+    }
 
-        function smoothScrollTo(endX, endY, duration) {
-            const startX = window.scrollX || window.pageXOffset;
-            const startY = window.scrollY || window.pageYOffset;
-            const distanceX = endX - startX;
-            const distanceY = endY - startY;
-            const startTime = new Date().getTime();
+    /* Fechar Links do Mobile */
+    const closeNavMobile = () => {
+      document.querySelector('#navbarNavAltMarkup').classList.remove('show')
+    }
 
-            duration = typeof duration !== "undefined" ? duration : 400;
+    const removeActive = () => {
+      menuLinks.forEach((item) => {
+        item.classList.remove('active')
+      })
+    }
 
-            const easeInOutQuart = (time, from, distance, duration) => {
-                if ((time /= duration / 2) < 1)
-                return (distance / 2) * time * time * time * time + from;
-                return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
-            };
+    /* Verifica os links do nav */
+    const menuLinks = document.querySelectorAll('#navbarNavAltMarkup a[href^="#"]')
 
-            const timer = setInterval(() => {
-                const time = new Date().getTime() - startTime;
-                const newX = easeInOutQuart(time, startX, distanceX, duration);
-                const newY = easeInOutQuart(time, startY, distanceY, duration);
-                if (time >= duration) {
-                clearInterval(timer);
-                }
-                window.scroll(newX, newY);
-                
-            }, 1000 / 60);
-        }
+    menuLinks.forEach((link) => {
+      link.addEventListener('click', scrollToSection)
+    })
 
-        /* Fechar Links do Mobile */
-        const closeNavMobile = () => {
-            document.querySelector('#navbarNavAltMarkup').classList.remove('show')
-        }
+    /* Verifica os links do buttons consulta */
+    const btnConsulta = document.querySelectorAll('#btn-consulta')
 
-        /* Verifica os links do nav */ 
-        const menuLinks = document.querySelectorAll('#navbarNavAltMarkup a[href^="#"]')
-        menuLinks.forEach((link) => {
-            link.addEventListener('click', scrollToSection)
-        })
 
-        
-    </script>
+    const consultaWhatsapp = () => {
+      window.open('https://api.whatsapp.com/send?phone=5521991358766&text=Ol%C3%A1%2C+vim+do+Instagram%25', '_blank');
+    }
+
+    btnConsulta.forEach((link) => {
+      link.addEventListener('click', consultaWhatsapp)
+    })
+
+
+
+  </script>
 </body>
 
 </html>
