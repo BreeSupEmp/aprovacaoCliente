@@ -240,6 +240,15 @@ header nav img {
     height: auto;
 }
 
+.bg-rosa{
+    position: absolute;
+    width: 500vw;
+    height: 100vh;
+    margin-left: -50%;
+    z-index: -4;
+    background: linear-gradient(165deg, #d5a79f77, #d6847e6d);
+}
+
 .bg-dra {
     width: 100%;
     min-height: 100vh;
@@ -260,6 +269,10 @@ header nav img {
 
 .bg-dra .row .col{
     width: 100px !important;
+}
+
+.bg-dra .row .col p{
+    text-shadow: 1px 1px 1px rgb(140, 137, 137);
 }
 
 
@@ -523,6 +536,7 @@ header nav img {
     font-size: 1.5em;
     margin-bottom: 100px;
     border-bottom-right-radius: 20px;
+    font-family: mont-regular, sans-serif;
 }
 
 /* Contato */
