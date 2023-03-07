@@ -8,58 +8,46 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="./assets/img/icon.webp" type="image/x-icon">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg" id="navbarNavAltMarkup">
-      <div class="container-fluid right">
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/logo.webp" alt="logo" />
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+          <!-- Img e Titulo -->
+        <a class="navbar-brand" href="padrao.html">
+          <img src="./assets/img/logo.webp" alt="" width="30" height="24" class="d-inline-block align-text-top">
         </a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Menu Mobile  -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" id="menu-mobile">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quemsomos">Quem Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#servicos">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tecnologias">Nossas Tecnologias</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#equipe">Equipe</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#historia">Histórias de Sucesso</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.maisodontoclinica.com/mais-odonto-kids" target="_blank">Mais odonto
-                kids</a>
-            </li>
-          </ul>
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#quemsomos">Quem Somos</a>
+            <a class="nav-link" href="#servicos">Serviços</a>
+            <a class="nav-link" href="#tecnologias">Nossas Tecnologias</a>
+            <a class="nav-link" href="#equipe">Equipe</a>
+            <a class="nav-link" href="#historia">Histórias de Sucesso</a>
+            <a class="nav-link" href="#contato">Contato</a>
+          </div>
         </div>
       </div>
-    </nav>
+  </nav>
+    
   </header>
 
   <main>
     <section id="home">
       <div class="container-fluid">
-        <img src="./assets/img/home.webp" class="img-fluid width-100" alt="...">
+        <picture>
+          <source media="(max-width: 600px )" srcset="./assets/img/home_small.webp" type="image/webp" class="width-100">
+          <source media="(min-width: 600px )" srcset="./assets/img/home.webp" type="image/webp" class="width-100">
+          <img src="./assets/img/home.webp" alt="" class="width-100">
+        </picture>
       </div>
 
       <div class="container content-relative">
@@ -71,15 +59,15 @@
         <div class="container-fluid ">
           <div class="video-home content-relative">
             <div class="vector"><img src="assets/img/vector_cinza.webp" /></div>
-            <video class="container-fluid video" controls muted>
+            <video class="container-fluid video" preload="metadata" poster="" controls muted>
               <source src="https://video.wixstatic.com/video/518450_42904589912e4b7aafd7cfb0554d7d06/720p/mp4/file.mp4"
                 type="video/mp4">
               Your browser does not support the video tag.
             </video>
-            <div class="vector-dente"><img src="assets/img/dente.webp" /></div>
+            <div class="vector-dente small-hidden"><img src="assets/img/dente.webp" /></div>
           </div>
-          <div class="container-fluid text-center">
-            <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+          <div class="container-fluid text-center margin-y">
+            <button class="btn-consulta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Marque Sua consulta</button>
           </div>
         </div>
       </div>
@@ -124,8 +112,8 @@
               em um sólugar.</p>
           </div>
         </div>
-        <div class="container-fluid ">
-          <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+        <div class="container-fluid">
+          <button class="btn-consulta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Marque Sua consulta</button>
         </div>
       </div>
     </section>
@@ -133,7 +121,7 @@
     <section id="quemsomos">
       <div class="container">
         <div class="row">
-          <div class="col img-quemsomos">
+          <div class="col img-quemsomos small-hidden">
             <img src="./assets/img/quemsomos.webp" class="img-fluid width-100" alt="...">
           </div>
           <div class="col text-padding">
@@ -159,6 +147,10 @@
             <p>Nossa equipe é formada por profissionais
               comprometidos com a qualidade do nosso trabalho e
               com obem-estar do paciente.</p>
+
+              <div class="col img-quemsomos small-visble">
+                <img src="./assets/img/quemsomos.webp" class="img-fluid width-100" alt="...">
+              </div>
           </div>
         </div>
         <div class="row text-center margin-y">
@@ -229,7 +221,7 @@
         </div>
       </div>
       <div class="container-fluid text-center margin-y">
-        <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+        <button class="btn-consulta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Marque Sua consulta</button>
       </div>
     </section>
 
@@ -246,7 +238,7 @@
               odontológico.</p>
 
             <div class="container-fluid text-center margin-y">
-              <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+              <button class="btn-consulta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Marque Sua consulta</button>
             </div>
           </div>
           <div class="col tecs">
@@ -334,10 +326,10 @@
                   type="video/mp4">
                 Your browser does not support the video tag.
               </video>
-              <div class="vector-dente"><img src="assets/img/dente.webp" /></div>
+              <div class="vector-dente small-hidden"><img src="assets/img/dente.webp" /></div>
             </div>
-            <div class="container-fluid text-center float-bottom">
-              <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+            <div class="container-fluid text-center margin-y">
+              <button class="btn-consulta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Marque Sua consulta</button>
             </div>
           </div>
           <div class="content-relative">
@@ -376,7 +368,7 @@
               </div>
             </div>
             <div class="container-fluid text-center">
-              <button class="btn-consulta" id="btn-consulta">Marque Sua consulta</button>
+              <button class="btn-consulta" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Marque Sua consulta</button>
             </div>
           </div>
           <div class="col endereco">
@@ -400,15 +392,62 @@
     </section>
   </main>
 
+  <!-- Modal -->
+  <div class="modal fade-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Marque sua Consulta</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="marcarConsulta(event)" method="post" name="consulta">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nome</label>
+              <input type="text" class="form-control" id="recipient-name" name="name"
+                placeholder="Como você gostaria de ser chamado(a) ?" required>
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Email</label>
+              <input type="email" class="form-control" id="recipient-name" name="email"
+                placeholder="melhor_email@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Celular</label>
+              <input type="tel" class="form-control" id="recipient-name" name="phone" minlength="11"
+                placeholder="21900000000" required>
+            </div>
+            <div class="mb-3 text-center">
+              <button class="btn-consulta-sem-info" id="btn-consulta">sem me identificar</button>
+              <button type="submit" class="btn btn-consulta" data-bs-dismiss="modal">Agendar</button>
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
+  
+     <!-- JS -> Faz o Menu MObile Funcionar -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
   <script>
     document.addEventListener('contextmenu', event => event.preventDefault());
   </script>
@@ -426,7 +465,6 @@
   </script>
 
   <!-- scroll  -->
-
   <script>
     /* Scroll Smoth */
     const scrollToSection = (event) => {
@@ -490,20 +528,151 @@
       link.addEventListener('click', scrollToSection)
     })
 
-    /* Verifica os links do buttons consulta */
-    const btnConsulta = document.querySelectorAll('#btn-consulta')
+  </script>
+
+  <!-- Consulta -->
+  <script>
+    const company = "EN0dzCiLcaLLltBwDhyx"
+    const site = "+Odonto"
+    let latitude=0 , longitude=0
+
+    const marcarConsulta = (e) => {
+      e.preventDefault()
+      var name = document.getElementsByName('name')[0].value;
+      var email = document.getElementsByName('email')[0].value;
+      var phone = document.getElementsByName('phone')[0].value;
+
+      localStorage.setItem('nome', name)
+      localStorage.setItem('email', phone)
+      localStorage.setItem('phone', phone)
+
+      const text = `Olá, sou ${name.split(' ')[0]} e vim pelo site da +odonto`
+
+      try {
+        const body = {
+        company: company,
+        site: site,
+        user: JSON.stringify({
+          name: name,
+          email: email,
+          tel: phone,
+          location: JSON.stringify({
+            latitude: latitude,
+            longitude: longitude,
+          })
+        })
+      }
+      fetch('https://breese.onrender.com/api/leads', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+          "Authorization": "Bearer ^lw%V2voS5HjeLfEghE2YWw4U$cv0pVj2Pd8LzFQLilkpNt^sQ",
+          "Content-Type": "application/json"
+        }
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data)
+          //window.sessionStorage.setItem('view', true)
+        })
+        .catch((error) => {
+          console.error("Error adding leads: ", error);
+        });
+      } catch (error) {
+        console.log(error)
+      } finally {
+        window.open(`https://api.whatsapp.com/send?phone=5521991358766&text=${text}`, '_blank');
+        document.getElementsByName('consulta')[0].reset();
+
+      }
 
 
-    const consultaWhatsapp = () => {
-      window.open('https://api.whatsapp.com/send?phone=5521991358766&text=Ol%C3%A1%2C+vim+do+Instagram%25', '_blank');
     }
 
-    btnConsulta.forEach((link) => {
-      link.addEventListener('click', consultaWhatsapp)
-    })
+    const insertNewsletter = (nome, email, tel) => {
+      const body = {
+        company: company,
+        site: site,
+        user: JSON.stringify({
+          name: name,
+          email: email,
+          tel: tel,
+          location: JSON.stringify({
+            latitude: latitude,
+            longitude: longitude,
+          })
+        })
+      }
+      fetch('https://breese.onrender.com/api/leads', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+          "Authorization": "Bearer ^lw%V2voS5HjeLfEghE2YWw4U$cv0pVj2Pd8LzFQLilkpNt^sQ",
+          "Content-Type": "application/json"
+        }
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data)
+          //window.sessionStorage.setItem('view', true)
+        })
+        .catch((error) => {
+          console.error("Error adding leads: ", error);
+        });
+    }
 
+    const insertView = () => {
+      // Add a new document with a generated id.
+      const date = new Date()
+      const now = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+      const body = {
+        day: date.getDate(),
+        hour: `${date.getHours()}:${date.getMinutes()}`,
+        month: date.getMonth() + 1,
+        year: date.getFullYear(),
+        date: now,
+        dayOfTheWeek: date.getDay(),
+        company: company,
+        site: site
+      }
+      fetch('https://breese.onrender.com/api/views', {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+          "Authorization": "Bearer ^lw%V2voS5HjeLfEghE2YWw4U$cv0pVj2Pd8LzFQLilkpNt^sQ",
+          "Content-Type": "application/json"
+        }
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          window.sessionStorage.setItem('view', true)
+        })
+        .catch((error) => {
+          console.error("Error adding view: ", error);
+        });
+    }
+    
+    const removebuttonModal = () => {
+      const button = document.querySelectorAll('.btn-consulta')
+      button.forEach((item)=> {
+        item.setAttribute('onclick', 'consultaWhatsapp(event)')
+        delete item.dataset.bsToggle
+      })
+    }
 
+    const consultaWhatsapp = (e) => {
+      e.preventDefault()
+      let text = ''
+      localStorage.getItem('nome') 
+        ? 
+          text = `Olá, sou ${localStorage.getItem('nome').split(' ')[0]}, vim pelo site da +odonto`  
+        : 
+          text = 'Olá, vim pelo site da +odonto'
+      window.open(`https://api.whatsapp.com/send?phone=5521991358766&text=${text}`, '_blank');
+    }
 
+    window.localStorage.getItem('nome') ? removebuttonModal() : ''
+    window.sessionStorage.getItem('view') ? '' :  insertView() 
   </script>
 </body>
 
