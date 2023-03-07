@@ -248,6 +248,7 @@ header nav img {
     color: white;
     font-size: 1em;
     font-family: mont-regular, sans-serif;
+    margin: 50px auto;
 }
 
 #home  .video-home{
@@ -289,7 +290,7 @@ header nav img {
 .bg-dra .row .col p {
     color: var(--color-cinza);
     margin-left: 30px;
-    color: var(--color-cinza);
+    text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.662);
 }
 
 
