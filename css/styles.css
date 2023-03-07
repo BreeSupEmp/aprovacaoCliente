@@ -201,11 +201,11 @@ video::after {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.295);
 }
 
-.small-hidden{
+.small-hidden {
     display: none;
 }
 
-.small-visible{
+.small-visible {
     display: block;
 }
 
@@ -251,11 +251,11 @@ header nav img {
     margin: 50px auto;
 }
 
-#home  .video-home{
+#home .video-home {
     align-items: center;
 }
 
-#home  .vector{
+#home .vector {
     width: 100px;
     height: auto;
     top: -50px;
@@ -283,7 +283,7 @@ header nav img {
 
 
 .bg-dra .row .col {
-    width: 100% ;
+    width: 100%;
     height: auto
 }
 
@@ -517,55 +517,60 @@ header nav img {
     margin-bottom: 100px;
 }
 
-    /* Contato */
+/* Contato */
 
-    .contato .row {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.contato .row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .contato .icons-contato {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-bottom: 40px;
-    }
+.contato .icons-contato {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
 
-    .contato .icons-contato img {
-        width: 100px;
-    }
+.contato .icons-contato img {
+    width: 100px;
+}
 
-    .contato .endereco {}
+.contato .endereco {}
 
-    .contato .endereco div {
-        width: 90%;
-        margin: auto;
-        padding: 50px;
-        border: 3px solid var(--color-rosaEcuro);
-        border-radius: 10px;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+.contato .endereco div {
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    border: 3px solid var(--color-rosaEcuro);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-    .contato .endereco div a {
-        color: var(--color-cinza);
-    }
+.contato .endereco div a {
+    color: var(--color-cinza);
+}
+
+.navbar-nav {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.475);
+}
+
+@media(min-width: 1000px) {
 
     .navbar-nav {
         padding: 20px;
-        background-color: rgba(255, 255, 255, 0.475);
+        background-color: transparent;
     }
 
-@media(min-width: 1000px) {
-        
-    .small-hidden{
+    .small-hidden {
         display: block;
     }
 
-    .small-visble{
+    .small-visble {
         display: none;
     }
 
@@ -574,19 +579,19 @@ header nav img {
         height: auto;
         margin: 20px 50px;
     }
-    
+
     .title img {
         width: 100%;
         transform: scale(1.5);
         height: auto;
         object-fit: cover;
     }
-    
+
     .sub-title {
         width: 300px;
         height: 120px;
     }
-    
+
     .sub-title img {
         width: 100%;
         height: auto;
@@ -601,7 +606,7 @@ header nav img {
         top: 0;
         z-index: 99;
         border-bottom: 2px solid var(--color-rosaEcuro);
-        padding: 5px 300px;
+        padding: 5px 100px;
         overflow: hidden;
         transition: scroll 1.5s ease-in-out;
     }
@@ -609,6 +614,7 @@ header nav img {
     header nav {
         height: 80px;
         text-transform: uppercase;
+        margin: 5px 100px;
     }
 
     header nav img {
@@ -623,16 +629,19 @@ header nav img {
         width: 100%;
     }
 
-    .border-thin {
+    #home .border-thin {
         width: 370px;
         padding: 20px;
         text-align: left;
         background-color: var(--color-rosa);
         border-top-right-radius: 30px;
         border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+
         color: white;
         font-size: 1.2em;
         font-family: mont-regular, sans-serif;
+        margin: 0px 0px;
     }
 
     .video-home {
@@ -643,7 +652,7 @@ header nav img {
         height: auto;
     }
 
-        
+
     .vector {
         width: 300px;
         height: 300px;
@@ -660,8 +669,8 @@ header nav img {
         height: auto;
         object-fit: contain;
     }
-    
-    #home  .vector{
+
+    #home .vector {
         width: 300px;
         height: auto;
         top: -150px;
@@ -962,7 +971,7 @@ header nav img {
         width: 90%;
         font-size: 1.2em;
         margin-bottom: 100px;
-        border-bottom-right-radius: 20px;
+        border-bottom-right-radius: 30px;
         font-family: mont-regular, sans-serif;
     }
 
