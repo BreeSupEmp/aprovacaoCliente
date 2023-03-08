@@ -120,6 +120,32 @@ video {
     border-radius: 10px;
 }
 
+iframe {
+    max-width: 720px;
+    border-radius: 10px;
+}
+
+.video {
+    border-radius: 10px;
+}
+
+.iframe {
+    max-width: 720px;
+    border-radius: 10px;
+}
+
+.video-radius{
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    background-color: red;
+}
+
+.video-radius iframe{
+    max-width: 720px;
+    height: 320px;
+}
+
 video::after {
     content: '';
     position: absolute;
@@ -262,20 +288,12 @@ header nav img {
     left: calc(95% - 100px);
 }
 
-.bg-rosa {
-    position: absolute;
-    width: 100%;
-    min-height: 100%;
-    margin-left: -3%;
-    z-index: -1;
-    /* background: linear-gradient(165deg, #d5a79f77, #d6847e6d); */
-}
-
 .bg-dra {
     width: 100vw;
     min-height: 100vh;
     min-height: auto;
-    background: url(../assets/img/thallita.webp);
+    background-color: transparent;
+    background-image: url(../assets/img/thallita.webp), linear-gradient(135deg, #d5a79f93, #d6847e8a ); 
     background-repeat: no-repeat;
     background-size: fill;
     background-position: 30% top;
@@ -288,9 +306,8 @@ header nav img {
 }
 
 .bg-dra .row .col p {
-    color: var(--color-cinza);
+    color: white;
     margin-left: 30px;
-    text-shadow: 2px 1px 1px rgba(255, 255, 255, 0.662);
 }
 
 
@@ -299,6 +316,11 @@ header nav img {
     text-align: justify;
 }
 
+
+#quemsomos .video-quemsomos {
+    text-align: center;
+    margin: 50px 0px;
+}
 
 /* Serviços */
 .card-image {
@@ -529,8 +551,7 @@ header nav img {
 
 .contato .icons-contato {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
     margin-bottom: 40px;
 }
 
@@ -652,6 +673,13 @@ header nav img {
         height: auto;
     }
 
+    .video-quemsomos {
+        margin: 70px 0px;
+        position: relative;
+        left: 25%;
+        width: 720px;
+        height: auto;
+    }
 
     .vector {
         width: 300px;
@@ -1008,5 +1036,11 @@ header nav img {
 
     .contato .endereco div a {
         color: var(--color-cinza);
+    }
+
+    
+    .iframe {
+        max-width: 720px;
+        border-radius: 10px;
     }
 }
